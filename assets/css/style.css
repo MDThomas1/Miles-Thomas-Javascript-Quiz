@@ -1,0 +1,91 @@
+body {
+    background-color: peru;
+}
+
+header {
+    text-align: center;
+    background-color: olive;
+    font-family: fantasy;
+}
+
+header h1 {
+    font-size: 400%;
+    padding: 7px;
+}
+
+header p {
+    padding-bottom: 10px;
+}
+
+.start-button {
+    text-align: center;
+}
+
+.question {
+    text-align: center;
+    border-style: solid;
+    border-width: thick;
+    border-radius: 10px;
+    border-color: black;
+    margin: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.question h2 {
+    text-decoration: underline;
+    padding: 4px;
+}
+
+.question p {
+    margin: 7px;
+}
+
+.question li {
+    padding: 7px;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 5px;
+    background-color: darksalmon;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-radius: 2px;
+
+}
+
+#begin {
+    width: 40%;
+    height: 100px;
+    margin: 50px;
+    font-size: 40px;
+    text-decoration: underline;
+    background-color: coral;
+    border-radius: 10px;
+}
+
+#submit {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 40%;
+    margin-right: 40%;
+    width: 20%;
+    height: 30px;
+}
+
+#begin:hover {
+    color: azure;
+    background-color: brown;
+}
+
+.option:hover {
+    color: azure;
+    background-color: black;
+}
+
+#submit:hover {
+    background-color: black;
+    color: azure;
+}
+
