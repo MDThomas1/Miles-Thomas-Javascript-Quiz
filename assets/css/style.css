@@ -17,6 +17,10 @@ header p {
     padding-bottom: 10px;
 }
 
+.timer {
+    text-align: center;
+}
+
 .start-button {
     text-align: center;
 }
@@ -39,6 +43,13 @@ header p {
 
 .question p {
     margin: 7px;
+}
+
+#question-one,
+#question-two,
+#question-three,
+#question-four {
+    display: none;
 }
 
 .option {
