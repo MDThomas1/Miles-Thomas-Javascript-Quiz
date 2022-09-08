@@ -1,15 +1,19 @@
+//Elements of the page sepearte to the questions
 var timerEl = document.querySelector('.timer');
 var startEl = document.querySelector('#begin');
 var results = document.querySelector('.results');
 
+//The questions on the quiz
 var firstQuestion = document.querySelector('#question-one');
 var secondQuestion = document.querySelector('#question-two');
 var thirdQuestion = document.querySelector('#question-three');
 var fourthQuestion = document.querySelector('#question-four');
 
+//Numerical information within the page
 var secondsLeft = 300
 var score = 0
 
+//The function that begins the quiz
 function beginQuiz() {
     startEl.setAttribute('style', 'display:none;')
     firstQuestion.setAttribute('style', 'display:block;')
@@ -30,7 +34,7 @@ function beginQuiz() {
         }
     }, 1000)
 }
-
+//Functions connected to your answer to the first question
         function incorrectOne() {
             firstQuestion.setAttribute('style', 'display:none;')
             secondQuestion.setAttribute('style', 'display:block;')
@@ -42,6 +46,7 @@ function beginQuiz() {
             score++
         }
         
+        //Functions relating to your answer to the second question
         function incorrectTwo() {
             secondQuestion.setAttribute('style', 'display:none;')
             thirdQuestion.setAttribute('style', 'display:block;')
@@ -53,6 +58,7 @@ function beginQuiz() {
             thirdQuestion.setAttribute('style', 'display:block;')
         }
         
+        //Functions relating to your answer to the third question
         function incorrectThree() {
             thirdQuestion.setAttribute('style', 'display:none')
             fourthQuestion.setAttribute('style', 'display:block;')
@@ -64,6 +70,7 @@ function beginQuiz() {
             fourthQuestion.setAttribute('style', 'display:block;')
         }
         
+        //Functions relating to your answer to the final question
         function incorrectFour() {
             fourthQuestion.setAttribute('style', 'display:none')
             clearTimeout(beginQuiz)
@@ -83,6 +90,7 @@ function beginQuiz() {
             saveScore()
         }
 
+        //The function that saves your score
         function saveScore() {
             var initials = prompt("Enter your initials to have your score saved!")
 
@@ -91,4 +99,5 @@ function beginQuiz() {
             }
         }
 
+//The Event listener for the start quiz button
 startEl.addEventListener("click", beginQuiz);
