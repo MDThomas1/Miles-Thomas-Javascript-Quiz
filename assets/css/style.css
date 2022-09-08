@@ -1,7 +1,9 @@
+/*Whole page elements*/
 body {
     background-color: peru;
 }
 
+/*Header specific elements*/
 header {
     text-align: center;
     background-color: olive;
@@ -17,14 +19,17 @@ header p {
     padding-bottom: 10px;
 }
 
+/*Test timer*/
 .timer {
     text-align: center;
 }
 
+/*The section of the page containing the start button*/
 .start-button {
     text-align: center;
 }
 
+/*Styling on the questions*/
 .question {
     text-align: center;
     border-style: solid;
@@ -45,6 +50,7 @@ header p {
     margin: 7px;
 }
 
+/*The specific questions*/
 #question-one,
 #question-two,
 #question-three,
@@ -52,6 +58,7 @@ header p {
     display: none;
 }
 
+/*The options avavilable within all questions*/
 .option {
     padding: 7px;
     width: 30%;
@@ -66,10 +73,12 @@ header p {
 
 }
 
+/*The section that displays the participant's score*/
 .results {
     text-align: center;
 }
 
+/*The button that activates the quiz*/
 #begin {
     width: 40%;
     height: 100px;
@@ -80,11 +89,13 @@ header p {
     border-radius: 10px;
 }
 
+/*What happens when you hover over the start button*/
 #begin:hover {
     color: azure;
     background-color: brown;
 }
 
+/*
 .option:hover {
     color: azure;
     background-color: black;
