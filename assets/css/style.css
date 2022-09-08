@@ -66,6 +66,10 @@ header p {
 
 }
 
+.results {
+    text-align: center;
+}
+
 #begin {
     width: 40%;
     height: 100px;
