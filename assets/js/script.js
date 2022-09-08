@@ -7,11 +7,6 @@ var secondQuestion = document.querySelector('#question-two');
 var thirdQuestion = document.querySelector('#question-three');
 var fourthQuestion = document.querySelector('#question-four');
 
-var resultOne = document.querySelector('.question-one-result');
-var resultTwo = document.querySelector('.question-two-result');
-var resultThree = document.querySelector('.question-three-result');
-var resultFour = document.querySelector('.question-four-result');
-
 var secondsLeft = 300
 var score = 0
 
@@ -29,6 +24,8 @@ function beginQuiz() {
             secondQuestion.setAttribute('style', 'display:none;')
             thirdQuestion.setAttribute('style', 'display:none;')
             fourthQuestion.setAttribute('style', 'display:none;')
+            results.textContent = "You have scored " + score + " out of 4"
+            saveScore()
 
         }
     }, 1000)
@@ -71,15 +68,27 @@ function beginQuiz() {
             fourthQuestion.setAttribute('style', 'display:none')
             clearTimeout(beginQuiz)
             timerEl.textContent = "Quiz complete"
+            secondsLeft = 0
             results.textContent = "You have scored " + score + " out of 4";
+            saveScore()
         }
         
         function correctFour() {
             fourthQuestion.setAttribute('style', 'display:none')
             clearTimeout(beginQuiz)
             timerEl.textContent = "Quiz complete"
+            secondsLeft = 0
             score++
             results.textContent = "You have scored " + score + " out of 4"
+            saveScore()
+        }
+
+        function saveScore() {
+            var initials = prompt("Enter your initials to have your score saved!")
+
+            if (initials != null) {
+                localStorage.setItem(initials, score)
+            }
         }
 
 startEl.addEventListener("click", beginQuiz);
