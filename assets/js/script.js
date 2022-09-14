@@ -73,18 +73,16 @@ function beginQuiz() {
         //Functions relating to your answer to the final question
         function incorrectFour() {
             fourthQuestion.setAttribute('style', 'display:none')
-            clearTimeout(beginQuiz)
+            secondsLeft = null
             timerEl.textContent = "Quiz complete"
-            secondsLeft = 0
             results.textContent = "You have scored " + score + " out of 4";
             saveScore()
         }
         
         function correctFour() {
             fourthQuestion.setAttribute('style', 'display:none')
-            clearTimeout(beginQuiz)
+            secondsLeft = null
             timerEl.textContent = "Quiz complete"
-            secondsLeft = 0
             score++
             results.textContent = "You have scored " + score + " out of 4"
             saveScore()
