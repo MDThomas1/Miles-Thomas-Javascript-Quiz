@@ -1,4 +1,4 @@
-# Miles-Thomas-homework-task-4
+# Miles-Thomas-Javascript-Quiz
 
 ## URL to Wepage
 https://mdthomas1.github.io/Miles-Thomas-homework-task-4/
