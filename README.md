@@ -1,7 +1,7 @@
 # Miles-Thomas-Javascript-Quiz
 
 ## URL to Wepage
-https://mdthomas1.github.io/Miles-Thomas-homework-task-4/
+https://mdthomas1.github.io/Miles-Thomas-Javascript-Quiz/
 
 ## Screenshot
 <img src=./assets/images/screenshot.png>
